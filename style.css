@@ -5,7 +5,9 @@
     padding: 0px;
     margin: 0px;
 }
-
+body{
+    background: grey;
+}
 font{
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -14,5 +16,56 @@ font{
 #nav h2{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+}
+body{
+    background: grey;
+    min-height: 100vh;
+    color: white;
+}
+
+button{
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    padding: 1rem;
+    border: none;
+    border-radius: 1em;
+    transition: transform 0.3s ease-in;
+}
+
+button.active{
+    transform: translateY(0);
+}
+
+nav{
+    position: fixed;
+    top: 2em;
+    /* right: 1em; */
+    height: 40vh;
+    width: 100%;
+    padding: 2rem;
+    background: #000;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+nav.active{
+    transform: translateY(0);
+}
+
+nav ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li{
+    padding: 1em 0em;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
 }
 
